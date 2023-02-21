@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form action="#">
         <label for="name">Повне ім`я</label>
         <input id="name" type="text" required>
         <br>
@@ -25,9 +25,9 @@
         <br>
         <br>
         <label>Стать</label>
-        <input type="radio" id="man" value="man" name="stat" checked>
+        <input type="radio" id="man" value="man" name="stat" checked required>
         <label for="man">чоловіча</label>
-        <input type="radio" id="woman" value="woman" name="stat">
+        <input type="radio" id="woman" value="woman" name="stat" required>
         <label for="woman">жіноча</label>
         <br>
         <br>
@@ -46,10 +46,10 @@
         <br>
         <br>
         <label>Повна адреса</label>
-        <textarea name="address" style="width:150px; height:50px;" placeholder="Країна, регіон, місто/селище, вулиця" ></textarea>
+        <textarea name="address" style="width:150px; height:50px;" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
         <br>
         <br>
-        <input type="checkbox" id="consent" name="consent">
+        <input type="checkbox" id="consent" name="consent" required>
         <label for="consent">Я погоджуюсь з обробкою персональних даних</label>
         <br>
         <br>
