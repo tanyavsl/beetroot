@@ -9,15 +9,15 @@
 <body>
     <form action="#">
         <label for="name">Повне ім`я</label>
-        <input id="name" type="text" required>
+        <input id="name" type="text" name="name" required>
         <br>
         <br>
         <label for="email">Email</label>
-        <input id="email" type="text" required>
+        <input id="email" type="email" name="email" required>
         <br>
         <br>
         <label for="password">Пароль</label>
-        <input id="password" type="text" required>
+        <input id="password" type="text" name="password" required>
         <br>
         <br>
         <label for="check">Пароль ще раз</label>
@@ -32,7 +32,7 @@
         <br>
         <br>
         <label for="age">Вік</label>
-        <input id="age" type="text" required>
+        <input id="age" type="number" required min="18" max="88">
         <br>
         <br>
         <label for="course">Курс</label>
