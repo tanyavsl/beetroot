@@ -7,6 +7,54 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form>
+        <label for="name">Повне ім`я</label>
+        <input id="name" type="text" required>
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input id="email" type="text" required>
+        <br>
+        <br>
+        <label for="password">Пароль</label>
+        <input id="password" type="text" required>
+        <br>
+        <br>
+        <label for="check">Пароль ще раз</label>
+        <input id="check" type="text" required>
+        <br>
+        <br>
+        <label>Стать</label>
+        <input type="radio" id="man" value="man" name="stat" checked>
+        <label for="man">чоловіча</label>
+        <input type="radio" id="woman" value="woman" name="stat">
+        <label for="woman">жіноча</label>
+        <br>
+        <br>
+        <label for="age">Вік</label>
+        <input id="age" type="text" required>
+        <br>
+        <br>
+        <label for="course">Курс</label>
+        <select id="course" name="course" required>
+            <option>Виберіть курс</option>
+            <option value="front-end">Front-End</option>
+            <option value="back-end">Back-end</option>
+            <option value="project">Project Management</option>
+            <option value="qa">QA Manuals</option>
+        </select>
+        <br>
+        <br>
+        <label>Повна адреса</label>
+        <textarea name="address" style="width:150px; height:50px;" placeholder="Країна, регіон, місто/селище, вулиця" ></textarea>
+        <br>
+        <br>
+        <input type="checkbox" id="consent" name="consent">
+        <label for="consent">Я погоджуюсь з обробкою персональних даних</label>
+        <br>
+        <br>
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+    </form>
 </body>
 </html>
