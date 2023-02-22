@@ -11,17 +11,18 @@
     <main>
         <header>
             <nav class="navigation">
-             <a>Home</a>
-             <a>About me</a>
-             <a href="">Skills</a>
-             <a href="">Portfolio</a>
-             <a href="">Contacts</a>
+             <a href="#home">Home</a>
+             <a href="#about me">About me</a>
+             <a href="#skills">Skills</a>
+             <a href="#portfolio">Portfolio</a>
+             <a href="#contacts">Contacts</a>
             </nav>
-            <section>
+            <section id="home">
                 <h1>Denis Novik</h1>
-                <img class="denis" src="/картинки/photo Denis Novik.png" alt="foto Denis Novik">
+                <img class="denis" src="/assets/img/photo Denis Novik.png" alt="foto Denis Novik">
             </section>
-            <section>
+        </header>
+            <section id="about me">
                 <h2>About me</h2>
                 <p>Hi, I'm Denis – UX/UI designer from Minsk.
                     I'm interested in design and everything connected with it.</p>
@@ -30,16 +31,29 @@
                 <p>Ready to implement excellent projects
                     with wonderful people.</p>
             </section>
-            <section>
-                <heading>
+            <section id="skills">
                     <h2>Skills</h2>
-                    <h4>I work in such programs as</h4>
-                </heading>
+                    <p>I work in such programs as</p>
+                    <img src="/assets/icons/product-list.png" alt="product" width="600">
             </section>
-        </header>
-        <section>
-
-        </section>
+             <section id="portfolio">
+                 <h2>Portfolio</h2>
+                 <img src="/assets/img/Fashion-Store.png" alt="fashion store" width="600">
+                 <p>Online fashion store - Homepage</p>
+                 <img src="/assets/img/reebok_web.png" alt="reebok web" width="600">
+                 <p>Reebok Store - Concept</p>
+                 <img src="/assets/img/braun-landing.png" alt="braun landing" width="600">
+                 <p>Braun Landing Page - Concept</p>
+             </section>
+             <footer id="contacts">
+                <h2>Contacts</h2>
+                <p>Want to know more or just chat? You are welcome!</p>
+                <button type="submit">Send message</button>
+                <br>
+                <br>
+                <img src="/assets/icons/Social-group.png" alt="social group" width="250">
+                <p>Like me on Linkedln, Instagram, Behance, Dribble</p>
+             </footer>
     </main>
 </body>
 </html>
