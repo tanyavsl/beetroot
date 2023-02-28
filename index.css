@@ -1,0 +1,244 @@
+@import "./styles/reset.css";
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #828282;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 496px;
+    height: 30px;
+    padding-left: 220px;
+}
+
+a {
+    text-decoration: none;
+    color: #828282;
+}
+
+a:hover {
+    color: black;
+}
+
+.nav {
+   width: 950px;
+   border-bottom: 1px solid #828282;
+} 
+
+.den {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+.denis {
+    width: 970px;
+    height: 387px;
+}
+
+.story {
+    width: 1440px;
+    height: 500px;
+    left: calc(50% - 1440px/2);
+    top: 0px;
+    background: #F6F6F6;
+}
+
+h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1, 3;
+    text-align: center;
+    padding-top: 100px;
+    color: #070707;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 480px 100px 480px;
+    gap: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.work {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 20px;
+    color: #070707;
+}
+
+.prog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding-top: 57px;
+}
+
+.adobe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 210px;
+    padding-top: 57px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.whtstar {
+    padding-right: 150px;
+}
+
+.firststar {
+    padding-left: 20px;
+}
+
+.twstar {
+    padding-right: 145px;
+}
+
+.threstar {
+    padding-right: 140px;
+}
+
+.portf {
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgport {
+    width: 970px;
+    height: 540px;
+    padding-bottom: 40px;
+}
+
+.h2p {
+    padding-bottom: 50px;
+}
+
+.paragraph {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #070707;
+    padding-bottom: 70px;
+}
+
+.link {
+    color: black;
+}
+
+a:hover.link {
+    color: #828282;
+}
+
+.textocont {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #070707;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.message {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 60px;
+    padding top: 40px;
+    gap: 50px;
+}
+
+.textend {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    padding-bottom: 100px;
+    color: #828282;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 44px;
+    background: #070707;
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}

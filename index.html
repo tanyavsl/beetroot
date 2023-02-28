@@ -9,92 +9,115 @@
 </head>
 <body>
     <header>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
+        <div class="nav">
+        <nav>
+            <ul class="navigation">
+                <li class="home"><a href="#home">Home</a></li>
                 <li><a href="#about me">About me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
        </nav>
+    </div>
+       
     </header>  
-        <section id="home">
-            <h1>Denis Novik</h1>
+        <section id="home" class="home">
+            <h1 class="den">Denis Novik</h1>
             <img class="denis" src="./assets/img/photo Denis Novik.png" alt="foto Denis Novik">
         </section>
     <main>
-        <section id="about me">
+        <section id="about me" class="about">
+            <div class="story">
             <h2>About me</h2>
-            <p>Hi, I'm Denis – UX/UI designer from Minsk.I'm interested in design and everything connected with it.</p>
-            <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
-            <p>Ready to implement excellent projects with wonderful people.</p>
+            <div class="text">
+            <p>Hi, I'm Denis – UX/UI designer from Minsk. <br> I'm interested in design and everything connected with it.</p>
+            <p>I'm studying at courses "Web and mobile design <br> interfaces" in IT-Academy.</p>
+            <p>Ready to implement excellent projects <br> with wonderful people.</p>
+            </div>
+            </div>
         </section>
         <section id="skills">
             <header>
                 <h2>Skills</h2>
-                <p>I work in such programs as</p>
+                <p class="work">I work in such programs as</p>
             </header>
+        </section>
             <div>
-                <img src="./assets/icons/Ps.svg" alt="Photoshop">
-                <p>Adobe Photoshop</p>
+                <ul class="prog">
+                <li><img class="icons" src="./assets/icons/Ps.svg" alt="Photoshop"></li>
+                <li><img src="./assets/icons/Ai.svg" alt="illustrator"></li>
+                <li><img src="./assets/icons/Ae.svg" alt="after effects"></li>
+                <li><img src="./assets/icons/Figma.svg" alt="figma"></li>
+               </ul>
+               <ul class="adobe">
+                <li>Adobe <br> Photoshop</li>
+                <li>Adobe <br> Illustrator</li>
+                <li>Adobe <br> After Effects</li>
+                <li>Figma</li>
+                </ul>
+            </div> 
+            <div class="stars">
+                
+                <img class="firststar" src="./assets/icons/star-icon.svg" alt="black star">
+                <img src="./assets/icons/star-icon.svg" alt="black star">
+                <img src="./assets/icons/Vector.svg" alt="star">
+                <img src="./assets/icons/Vector.svg" alt="star">
+                <img class="whtstar" src="./assets/icons/Vector.svg" alt="star">
+            
+
                 <img src="./assets/icons/star-icon.svg" alt="black star">
                 <img src="./assets/icons/star-icon.svg" alt="black star">
+                <img src="./assets/icons/star-icon.svg" alt="black star">
                 <img src="./assets/icons/Vector.svg" alt="star">
-                <img src="./assets/icons/Vector.svg" alt="star">
-                <img src="./assets/icons/Vector.svg" alt="star">
+                <img class="twstar" src="./assets/icons/Vector.svg" alt="star">
+              
+
+                <img src="./assets/icons/star-icon.svg" alt="black star">
+                <img src="./assets/icons/star-icon.svg" alt="black star">
+                <img src="./assets/icons/star-icon.svg" alt="black star">
+                <img src="./assets/icons/star-icon.svg" alt="black star">
+                <img class="threstar" src="./assets/icons/Vector.svg" alt="star">
+              
+                <img src="./assets/icons/star-icon.svg" alt="black star">
+                <img src="./assets/icons/star-icon.svg" alt="black star">
+                <img src="./assets/icons/star-icon.svg" alt="black star">
+                <img src="./assets/icons/star-icon.svg" alt="black star">
+                <img src="./assets/icons/star-icon.svg" alt="black star">
+               
             </div>
-            <div>
-                <img src="./assets/icons/Ai.svg" alt="illustrator">
-                <p>Adobe Illustrator</p>
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/Vector.svg" alt="star">
-                <img src="./assets/icons/Vector.svg" alt="star">
-            </div>
-            <div>
-                <img src="./assets/icons/Ae.svg" alt="after effects">
-                <p>Adobe After Effects</p>
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/Vector.svg" alt="star">
-            </div>
-            <div>
-                <img src="./assets/icons/Figma.svg" alt="figma">
-                <p>Figma</p>
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-                <img src="./assets/icons/star-icon.svg" alt="black star">
-            </div>
-            </section>
+            <div class="portf">
             <section id="portfolio">
-                <h2>Portfolio</h2>
-                <img src="./assets/img/Fashion-Store.png" alt="fashion store" width="600">
-                <p>Online fashion store - Homepage</p>
+                <h2 class="h2p">Portfolio</h2>
+                <img class="imgport" src="./assets/img/Fashion-Store.png" alt="fashion store" width="600">
+                <p class="paragraph"><a class="link" href="#">Online fashion store - <br> Homepage</a></p>
             </section>
             <section>
-                <img src="./assets/img/reebok_web.png" alt="reebok web" width="600">
-                <p>Reebok Store - Concept</p>
+                <img class="imgport" src="./assets/img/reebok_web.png" alt="reebok web" width="600">
+                <p class="paragraph"><a class="link" href="#">Reebok Store - Concept</a></p>
             </section>
             <section>
-                <img src="./assets/img/braun-landing.png" alt="braun landing" width="600">
-                <p>Braun Landing Page - Concept</p>
+                <img class="imgport" src="./assets/img/braun-landing.png" alt="braun landing" width="600">
+                <p class="paragraph"><a class="link" href="#">Braun Landing Page - Concept</a></p>
             </section>
+            </div>
     </main>
         <footer id="contacts">
             <h2>Contacts</h2>
-            <p>Want to know more or just chat? You are welcome!</p>
-            <button type="submit">Send message</button>
+            <p class="textocont">Want to know more or just chat? You are welcome!</p>
+            <div class="button2">
+                <form action="mailto:tanatatyana068@gmail.com">
+                    <input class="button" name="submit" type="submit" value="Send message">
+                </form>
+           
+                </div>
+                <div class="soc">
             <img src="./assets/icons/linkedin.svg" alt="linkedin">
             <img src="./assets/icons/instagram.svg" alt="instagram">
             <img src="./assets/icons/behance.svg" alt="behance">
             <img src="./assets/icons/dribbble.svg" alt="dribbble">
-            <p>Like me on Linkedln, Instagram, Behance, Dribble</p>
+            </div>
+            <p class="textend">Like me on <br> Linkedln, Instagram, Behance, <br> Dribble</p>
         </footer>
     
 </body>
