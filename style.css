@@ -1,0 +1,125 @@
+@import url(./styles/reset.css);
+body {
+    background-color:  #3399CC;
+    color:  #FFFFFF;
+    border: 25px solid #2B81AC;
+    width: 1440px;
+    height: 900px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Unicode';
+    
+}
+h1 {
+    display: inline-block;
+    margin-left: 115px;
+    margin-top: 46px;
+   font-size: 21px;
+}
+i {
+    margin-left: 0;
+    display: inline-block;
+    
+  margin-top: 19px;
+   font-size: 21px;
+}
+
+.lisabon {
+    background: hsl(200, 88%, 64%);
+    width: 50%;
+   
+   
+}
+.paris {
+    background: #33a6cc;
+border-left: 0;
+width: 25%;
+}
+.belgrade {
+    background: #996699;
+border-left: 0;
+width: 24%;
+}
+.venice {
+    background-color: #C24747;
+    border-top: 0;
+    width: 25%;
+}
+.tel {
+    background-color: #E2674A;
+    border-top: 0;
+    width: 25%;
+    border-left: 0;
+}
+.cair {
+    background-color: #FFCC66;
+    border-top: 0;
+    width: 25%;
+    border-left: 0;
+}
+.newyork {
+    background-color: #99CC99;
+    border-top: 0;
+    width: 24%;
+    border-left: 0;
+}
+.newdel {
+    background-color: #669999;
+    border-top: 0;
+    width: 25%;
+}
+.sanfran {
+    background-color: #CC6699;
+    border-top: 0;
+    border-left: 0;
+    width: 50%;
+}
+.tokyo {
+    background-color: #339966;
+    border-top: 0;
+    width: 24%;
+    border-left: 0;
+}
+.sydney {
+    background-color: #666699;
+    width: 99%;
+    border-top: 0;
+}
+.weather li {
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.weather {
+    cursor: pointer;
+    font-size: 0;
+margin-left: 115px;
+margin-right: 115px;
+margin-top: 37px;
+
+text-align: center;
+
+}
+li {
+    padding-top: 26px;
+    height: 121px;
+    border: 2px solid #FFFFFF;
+    font-size: 22px;
+}
+
+
+footer {
+    font-size: 16px;
+    margin-left: 130px;
+    margin-top: 37px;
+}
+span {
+    display: block;
+    opacity: 70%;
+    
+}
+ul:hover li{
+    opacity: 50%;
+}
+ul:hover li:hover {
+    opacity: 1;
+}
