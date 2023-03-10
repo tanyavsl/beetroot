@@ -1,0 +1,86 @@
+@import "./styles/reset.css";
+@import "./assets/fonts/Staatliches/index.css";
+@import "./assets/fonts/Francois One/index.css";
+@import "./assets/fonts/Farro, PT Sans/index.css";
+
+html {
+    box-sizing: border-box;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    padding-top: 12px;
+    padding-bottom: 85px;
+}
+
+.eng {
+    font-family: 'Tourney';
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    padding-right: 50px;
+    padding-top: 29px;
+    padding-bottom: 100px;
+}
+
+.staatl {
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 22px;
+    padding-right: 601px;
+    padding-top: 26px;
+    padding-bottom: 96px;
+}
+
+h3 {
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 0.04em;
+}
+
+.chapter {
+    font-family: 'Farro';
+    font-weight: 300;
+    letter-spacing: 0.04em;
+}
+
+p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.grup {
+    padding-bottom: 70px;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.text {
+    background: #DADADA;
+}
+
+.paragraph {
+    padding-bottom: 40px;
+}
+
+b {
+    font-family: PT Sans Bold;
+}
+
+em {
+    font-family: PT Sans Italic;
+}
