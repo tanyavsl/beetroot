@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fonts/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./assets/fonts/fontawesome/css/solid.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <main class="wrapper">
+      <section class="forma">
+         <h3>Create an Account</h3>
+         <form>
+            <div class="row">
+            <div class="block">
+         <label for="name">First Name</label>
+         <input type="text" id="name" class="small">
+             </div>
+             <div class="block">
+         <label for="lastname">Last Name</label>
+         <input type="text" id="lastname" class="small">
+        </div>
+    </div>
+    <div class="block">
+         <label for="email">Email</label>
+         <input type="email" id="email" class="big">
+         </div>
+         <p>We'll never share your email anyone else.</p>
+         
+         <div class="sex">
+         <input type="radio" id="male" name="sex" class="mrg-right">
+         <label for="male"> Male</label>
+         <input type="radio" id="female" name="sex" class="mrg-right">
+         
+         <label for="female"> Female</label>
+         <label for="male" class="radio_icons">
+            <i class="fa-solid fa-circle-dot"></i>
+         </label>
+         </div>
+         <div class="row">
+            <div class="block">
+         <label for="country">Country</label>
+         <select name="country" id="country" class="small">
+             <option value="" >Select</option>
+             <option value="ukraine">Ukraine</option>
+             <option value="usa">USA</option>
+             <option value="poland">Poland</option>
+             <option value="italy">Italy</option>
+         </select>
+        </div>
+        <div class="block">
+         <label for="city">City</label>
+         <input type="text" id="city" class="small">
+        </div>
+    </div>
+         
+         <button type="submit">Sign up</button>
+        
+         <p class="foot">By clicking the 'Sign Up'button, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+         <div class="footer">
+         <p>Have an account?</p>
+         <p><a href="_login.html">Log In</a></p>
+        </div>
+        </form>
+      </section>
+    </main>
 </body>
 </html>

@@ -1,0 +1,156 @@
+@import url("./styles/reset.css");
+html {
+    background-color: #F7F7F7;;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #545454;
+
+}
+h3{
+    color: #1C1C1C;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: ;
+    background: #FFFFFF;
+    border-radius: 6px;
+    width: 570px;
+    height: 590px;
+    margin: auto;
+    margin-top: 50px;
+}
+.forma {
+    margin-top: 35px;
+    margin-left: 34px;
+    margin-right: 34px;
+    display: block;
+    width: 100%;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.small {
+    width: 245px;
+    height: 38px;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+.big {
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    height: 38px;
+}
+button {
+    width: 100%;
+    height: 38px;
+    background: #007BFF;
+border: 1px solid #E4E4E4;
+border-radius: 6px;
+color: #FFFFFF;
+margin-bottom: 22px;
+}
+button:hover {
+    background-color: #FFFFFF;
+    color: #007BFF;
+    cursor: pointer;
+}
+.foot {
+    padding-left: 81px;
+    padding-right: 79px;
+    margin-top: 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E4E4E4;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+   
+}
+p {
+    color: #969696;
+    font-size: 13px;
+}
+.sex {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+ /* 2 pages */
+ .update {
+    width: 150px;
+ }
+.foto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+input:focus {
+    border: 1px solid #007BFF;
+}
+.mrg-right {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.sex  {
+    position:relative;
+}
+.sex .radio_icons {
+    position:absolute;
+    bottom:1px;
+    display: none; 
+    color: #007BFF;
+}
+
+.sex input:checked ~ .radio_icons{
+    display:flex;
+} 
+
+
+.small1 {
+    width: 138px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+.p1 {
+    margin-left: 105px;
+    margin-top: -35px;
+    margin-bottom: 32px;
+}
+i[class="fa-solid fa-camera"] {
+    margin-left: -30px;
+    opacity: 70%;
+}
