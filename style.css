@@ -1,8 +1,11 @@
 @import url(./styles/reset.css);
 html {
     color: #16133D;
+    
+
 }
 h1 {
+    margin-left: 12px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
 font-size: 35px;
@@ -13,13 +16,22 @@ header {
     align-items: center;
     border-bottom: 1px solid #EFEEF3;
 }
+.headfoot {
+    margin-left: 135px;
+    display: flex;
+    align-items: center;
+}
 h3 {
+    margin-top: 100px;
+    margin-left: 138px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 font-size: 16px;
 color: #7690A8;
 }
 h2 {
+    margin-left: 135px;
+    margin-top: 15px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
 font-size: 40px;
@@ -28,6 +40,8 @@ font-size: 40px;
     display: flex;
     gap: 30px;
     margin: 40px 135px;
+    
+
 
 }
 .block {
@@ -36,14 +50,16 @@ font-size: 40px;
     border: 1px solid #E5EAF4;
 border-radius: 8px;
 }
-.textarea {
-    margin: 40px;
+.textarea { 
+  margin: 40px;
 }
 h4 {
     font-family: 'Roboto';
     font-weight: 400;
 font-size: 24px;
 letter-spacing: 0.2px;
+margin-top: 30px;
+margin-bottom: 15px;
 }
 .text {
     font-family: 'Roboto';
@@ -57,11 +73,28 @@ line-height: 28px;
     font-size: 16px;
     line-height: 19px;
     color: #3DB370;
+    margin-top: 30px;
 }
 footer {
+    padding-top: 40px;
     color: #FFFFFF;
-height: 193px;
+height: 153px;
 background: #16133D;
-display: flex;
-align-items: center;
+
+}
+.socmedia {
+ display: flex;
+ gap: 10px;
+ margin-left: 135px;
+ margin-top: 40px;
+}
+.smallicon {
+    border: 1px solid rgba(21, 101, 216, 0.1);
+border-radius: 16px;
+padding: 14px 13px;
+}
+.smallicon2 {
+    border: 1px solid rgba(21, 101, 216, 0.1);
+border-radius: 16px;
+  padding: 14px 19px;
 }
