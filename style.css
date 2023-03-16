@@ -87,11 +87,17 @@ p {
     font-size: 13px;
 }
 .sex {
+    display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    
-    
+    align-items: center;
 }
+.text {
+ padding-left: 8px;
+ padding-right: 21px;
+}
+
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -122,28 +128,16 @@ input:focus {
     margin-right: 2px;
     margin-left: 2px;
 }
-.sex  {
-    position:relative;
-}
-.sex .radio_icons {
-    position:absolute;
-    bottom:1px;
-    display: none; 
-    color: #007BFF;
-}
-
-.sex input:checked ~ .radio_icons{
-    display:flex;
-} 
-
 
 .small1 {
+    z-index:1;
     width: 138px;
     height: 30px;
     border-radius: 6px;
     border: 1px solid #E4E4E4;
     margin-top: 7px;
     margin-bottom: 20px;
+    
 }
 .p1 {
     margin-left: 105px;
@@ -153,4 +147,43 @@ input:focus {
 i[class="fa-solid fa-camera"] {
     margin-left: -30px;
     opacity: 70%;
+    z-index:-1;
+}
+input [type="file"] {
+   
+}
+
+/* radio button */
+.label {}
+
+.radio {
+    display: none;
+}
+
+.fake {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50px;
+    position: relative;
+}
+.fake::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #FFFFFF;
+    border: 6px solid #007BFF;
+    border-radius: 50px;
+    width: 8px;
+    height: 8px;
+    opacity:0;
+    transition: .2s;
+}
+.radio:checked + .fake::before {
+    opacity:1;
+}
+select {
+    color:#545454;
+    opacity: 60%;
 }
