@@ -1,0 +1,67 @@
+@import url(./styles/reset.css);
+html {
+    color: #16133D;
+}
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+font-size: 35px;
+}
+header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid #EFEEF3;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+font-size: 16px;
+color: #7690A8;
+}
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+font-size: 40px;
+}
+.section1 {
+    display: flex;
+    gap: 30px;
+    margin: 40px 135px;
+
+}
+.block {
+    width: 370px;
+    height: 340px;
+    border: 1px solid #E5EAF4;
+border-radius: 8px;
+}
+.textarea {
+    margin: 40px;
+}
+h4 {
+    font-family: 'Roboto';
+    font-weight: 400;
+font-size: 24px;
+letter-spacing: 0.2px;
+}
+.text {
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+}
+.textfoot {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3DB370;
+}
+footer {
+    color: #FFFFFF;
+height: 193px;
+background: #16133D;
+display: flex;
+align-items: center;
+}
