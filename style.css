@@ -50,6 +50,13 @@ font-size: 40px;
     border: 1px solid #E5EAF4;
 border-radius: 8px;
 }
+.block:hover {
+    border: 1px solid #3DB370;
+}
+.block:hover .smallicon {
+    
+
+}
 .textarea { 
   margin: 40px;
 }
@@ -75,6 +82,13 @@ line-height: 28px;
     color: #3DB370;
     margin-top: 30px;
 }
+a {
+    text-decoration: none;
+    color: #3DB370;
+}
+a:hover {
+    color: #52C29D;
+}
 footer {
     padding-top: 40px;
     color: #FFFFFF;
@@ -97,4 +111,7 @@ padding: 14px 13px;
     border: 1px solid rgba(21, 101, 216, 0.1);
 border-radius: 16px;
   padding: 14px 19px;
+}
+svg:hover {
+ fill: #3DB370;
 }
