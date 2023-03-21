@@ -1,0 +1,152 @@
+@import "./_reset";
+
+$color-light-gray: #898F8F;
+$color-gold: #FFCC00;
+$color-gray: #666666;
+$color-black: #333333;
+$font-Raleway: 'Raleway', sans-serif;
+$font-Roboto: 'Roboto', sans-serif;
+$font-OpenSans: 'Open Sans', sans-serif;
+
+
+@mixin blockFonts($family, $weight, $size, $color) {
+    font-family: $family;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+body {
+    margin: 121px 135px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+        @include blockFonts($font-Raleway, 500, 18px, $color-light-gray);
+    }
+
+    h1 {
+        @include blockFonts($font-Roboto, 900, 60px, $color-gold);
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imgsmall {
+    margin-left: 85px;
+    margin-right: 85px;
+    margin-top: 40px;
+}
+
+.block {
+    margin-top: 105px;
+    width: 430px;
+    height: 430px;
+    position: relative;
+
+    .square1 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid $color-gold;
+        position: absolute;
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .square2 {
+        right: 0;
+        width: 100px;
+        height: 100px;
+        border: 1px solid $color-gold;
+        position: absolute;
+        border-bottom: none;
+        border-left: none;
+    }
+
+    .square3 {
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+        border: 1px solid $color-gold;
+        position: absolute;
+        border-top: none;
+        border-right: none;
+    }
+
+    .square4 {
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+        border: 1px solid $color-gold;
+        position: absolute;
+        border-top: none;
+        border-left: none;
+    }
+
+    .block_foto_element {
+        width: 400px;
+        height: 400px;
+        margin: 15px;
+    }
+
+}
+
+.block_info {
+    margin-top: 110px;
+    width: 430px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        @include blockFonts($font-Roboto, 900, 36px, $color-gray);
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        @include blockFonts($font-Raleway, 400, 24px, $color-gray);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        @include blockFonts($font-Raleway, 500, 14px, $color-black);
+        line-height: 24px;
+        text-align: center;
+        margin-top: 49px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        bottom: -5px;
+        left: -10px;
+        width: 118px;
+        height: 24px;
+        background: transparent;
+        border: 1px solid $color-gold;
+        position: absolute;
+    }
+
+    label:hover {
+        color: #FFCC00;
+    }
+
+    label {
+        @include blockFonts($font-OpenSans, 700, 14px, $color-gray);
+        margin-top: 30px;
+        position: relative;
+    }
+}
