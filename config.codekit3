@@ -241,16 +241,16 @@
       "sct" : 0
     },
     "\/scss\/index.scss" : {
-      "aP" : 1,
-      "bl" : 1,
+      "aP" : 0,
+      "bl" : 0,
       "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/style.css",
-      "oF" : 2,
+      "oAP" : "\/scss\/index.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
