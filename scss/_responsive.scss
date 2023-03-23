@@ -1,0 +1,36 @@
+$screen-sm-min: 576px;
+ $screen-md-min: 768px;
+ $screen-lg-min: 992px;
+ $screen-xl-min: 1200px;
+ $screen-xxl-min: 1400px;
+ $first: 'max-width';
+
+ @mixin sm {
+     @media (#{$first}: #{screen-sm-min}){
+         @content;
+     }
+ }
+
+ @mixin md {
+     @media (#{$first}: #{screen-md-min}){
+         @content;
+     }
+ }
+
+ @mixin lg {
+     @media (#{$first}: #{screen-lg-min}){
+         @content;
+     }
+ }
+
+ @mixin xl {
+     @media (#{$first}: #{screen-xl-min}){
+         @content;
+     }
+ }
+
+ @mixin xxl {
+     @media (#{$first}: #{screen-xxl-min}){
+         @content;
+     }
+ }
