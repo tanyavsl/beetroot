@@ -10,25 +10,27 @@
 .header {
     display: flex;
     background-color: #fff;
-    justify-content: space-between;
-    
     padding-left: 135px;
     align-items: center;
     height: 100px;
+    justify-content: space-between;
 
     .nav_list {
         display: flex;
         gap: 42px;
+        justify-content: flex-end;
+        
 
         .search-icons {
             padding-left: 42px;
-        }
+        } 
     }
 }
 
 .header_title {
     height: 600px;
     max-width: 1440px;
+    width: 100%;
     background-image: url("./assets/icons/bg-image.svg");
     background-position: center;
     min-width: 320px;
@@ -315,7 +317,9 @@ footer {
 }
 
  .header-burger {
+   
     border: none;
+
     background: none;
     display: flex;
     flex-direction: column;
