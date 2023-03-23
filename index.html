@@ -1,12 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    
+
+<body id="header">
+    <header class="fixed-header">
+        <div class="header">
+            <img src="./assets/icons/Logo.svg" alt="logo">
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a class="nav_link" href="#header">HOME</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="#">WORKS</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="#blog">BLOG</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="#">CONTACT</a>
+                    </li>
+                    <img class="search-icons" src="./assets/icons/search.svg" alt="icons search">
+                </ul>
+            </nav>
+            <button class="header-burger">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="header_title">
+            <div class="header_title-text">
+                <h1 class="h1">Manifest is a newborn theme.</h1>
+                <h1 class="h1">Clean, simple and fast.</h1>
+            </div>
+        </section>
+        <section class="blog" id="blog">
+            <h2 class="blog_subject">Blog</h2>
+            <div class="blog_container">
+                <img class="blog_img" src="./assets/icons/image1.svg" alt="picture">
+                <div class="blog_container-text">
+                    <p class="blog_container-text-p">Technology, Interface Design</p>
+                    <h3 class="blog_container-text-h3">Using UX Design to Build a Sustainable Future</h3>
+                    <p class="text-p">6 May, 2020</p>
+                    <p class="blog_container-text-p2">Transformation has to be driven by everybody, not just by climate
+                        groups, and we have a responsibility to use our influence to drive this.</p>
+                </div>
+            </div>
+        </section>
+        <section class="blog2">
+            <div class="blog_container">
+                <div class="blog_container-text">
+                    <p class="blog_container-text-p">Technology, Interface Design</p>
+                    <h3 class="blog_container-text-h3">Using UX Design to Build a Sustainable Future</h3>
+                    <p class="text-p">6 May, 2020</p>
+                    <p class="blog_container-text-p2">Transformation has to be driven by everybody, not just by climate
+                        groups, and we have a responsibility to use our influence to drive this.</p>
+                </div>
+                <img class="blog_img" src="./assets/icons/image2.svg" alt="picture">
+            </div>
+        </section>
+        <section class="latest-post">
+            <header class="latest-post_header">
+                <p class="latest-post-p">Latest Posts</p>
+                <p class="view-all">View All</p>
+            </header>
+            <div class="conteiner">
+                <div class="conteiner-items">
+                    <img src="./assets/icons/image3.svg" alt="image">
+                    <div class="conteiner-items-p">
+                        <p>Interface Design</p>
+                        <p>8 June, 2020</p>
+                    </div>
+                    <h3>UX traffic light colours</h3>
+                    <p class="conteiner-items-p2">UI has to make a huge visual difference between warning, an alert and
+                        a success.</p>
+                </div>
+                <div class="conteiner-items">
+                    <img src="./assets/icons/image4.svg" alt="image">
+                    <div class="conteiner-items-p">
+                        <p>Technology</p>
+                        <p>6 May, 2020</p>
+                    </div>
+                    <h3>Using UX Design to Build a Sustainable Future</h3>
+                    <p class="conteiner-items-p2">UI has to make a huge visual difference between warning, an alert and
+                        a success.</p>
+                </div>
+                <div class="conteiner-items">
+                    <img src="./assets/icons/image5.svg" alt="image">
+                    <div class="conteiner-items-p">
+                        <p>Visual Design</p>
+                        <p>8 June, 2020</p>
+                    </div>
+                    <h3>Creativity vs. UX</h3>
+                    <p class="conteiner-items-p2">Is it possible to create a delightful user experience without
+                        following best UX practices?</p>
+                </div>
+            </div>
+        </section>
+        <section class="most-popular">
+            <header class="latest-post_header">
+                <p class="latest-post-p">The Most Popular</p>
+                <p class="view-all">View All</p>
+            </header>
+            <div class="conteiner-last">
+                <div class="conteiner-last-items">
+                    <img src="./assets/icons/image6.svg" alt="image">
+                    <div class="conteiner-items-p">
+                        <p>Interface Design</p>
+                        <p>8 June, 2020</p>
+                    </div>
+                    <h3>Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
+                    <p class="conteiner-items-p2">LinkedIn is on a clear mission to make professionals more successful
+                        by connecting the global workforce and as we learned — diversity and success go hand in hand</p>
+                </div>
+                <div class="conteiner-last-items">
+                    <img src="./assets/icons/image7.svg" alt="image">
+                    <div class="conteiner-items-p">
+                        <p>Visual Design</p>
+                        <p>8 June, 2020</p>
+                    </div>
+                    <h3>Creativity vs. UX</h3>
+                    <p class="conteiner-items-p2">Is it possible to create a delightful user experience without
+                        following best UX practices?</p>
+                </div>
+            </div>
+        </section>
+        <div class="button-div">
+            <button type="button" class="button">Load More</button>
+        </div>
+        <section class="content">
+            <div class="content-text">
+                <p>Full-time UI/UX designer</p>
+                <p>Head of Design at VeronaLabs.com</p>
+            </div>
+            <div class="content-text2">
+                <p>We work with clients around the world from our headquarters in Charleston, South Carolina.</p>
+                <p class="p-padding">We focus on naming, branding, brand narratives, website design and development, and brand
+                    experiences.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="footer">
+        <div class="footer-text">
+            <h3>Need a project?</h3>
+            <p>(239) 555-0108</p>
+            <p>tanya.hill@example.com</p>
+        </div>
+        <div class="footer-soc">
+            <img class="footer-img" src="./assets/icons/instagram.svg">
+            <img class="footer-img" src="./assets/icons/facebook.svg">
+            <img class="footer-img" src="./assets/icons/twitter.svg">
+            <img src="./assets/icons/linkedin.svg">
+        </div>
+    </div>
+    <p>© Copyright Manifest Theme. Allrights reserved</p>
+</footer>
 </body>
+
 </html>
