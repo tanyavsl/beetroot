@@ -1,0 +1,47 @@
+@import "./reset";
+@import "./responsive";
+ a {
+    text-decoration: none;
+   color: #242635;
+   font-family: 'Source Sans Pro';
+font-weight: 400;
+font-size: 16px;
+ }
+ .nav_list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    padding-right: 337px;
+
+ }
+ .nav {
+
+    margin-top: 69px;
+ }
+ h1 {
+    font-family: 'Poppins';
+font-weight: 500;
+font-size: 90px;
+letter-spacing: -2px;
+color: #242635;
+text-align: center;
+margin-top: 144px;
+margin-bottom: 30px;
+ }
+ p {
+    font-family: 'Source Sans Pro';
+font-weight: 400;
+font-size: 22px;
+text-align: center;
+color: #242635;
+margin-bottom: 47px;
+ }
+ .img {
+    display: flex;
+    justify-content: center;
+    .img-elem {
+        width: 864px;
+height: 328px;
+    }
+ }
+
