@@ -1,0 +1,59 @@
+@import "./reset";
+@import url(_responsive.scss);
+$color-grey: #323232;
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-grey5: #565656;
+$color-grey7: #7B7B7B;
+$color-greyC: #CCCCCC;
+$color-grey4: #F4F4F4;
+
+$font-RedHat: 'Red Hat Display', sans-serif;
+$font-Lato: 'Lato', sans-serif;
+
+
+
+@mixin blockFonts($family, $weight, $size, $color) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+
+.header-burger {
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+
+    .burger-line {
+        content: url(/assets/icons/Line1.svg);
+    }
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 10px;
+}
+
+.header-div-items {
+    display: flex;
+}
+
+.head-section {
+    background-image: url(/assets/icons/bg-image.svg);
+    width: 100%;
+    align-items: center;
+    h1 {
+        @include blockFonts($font-RedHat, 600, 30px, $color-black);
+        line-height: 50px;
+        letter-spacing: 0.05em;
+        padding-top: 70px;
+        padding-bottom: 230px;
+        padding-left: 10px;
+    }
+}
