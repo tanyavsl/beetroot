@@ -152,8 +152,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/style.css",
-      "oF" : 2,
+      "oAP" : "\/scss\/index.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -183,7 +183,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-unblue",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 701301957.17271805
+    "lastBuiltDate" : 701347180.05955601
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
