@@ -3,7 +3,7 @@ $screen-sm-min: 576px;
  $screen-lg-min: 992px;
  $screen-xl-min: 1200px;
  $screen-xxl-min: 1400px;
- $first: 'max-width';
+ $first: 'min-width';
 
  @mixin sm {
      @media (#{$first}: #{screen-sm-min}){

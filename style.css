@@ -2,7 +2,6 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
-@import url(_responsive.scss);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -359,6 +358,12 @@ textarea {
   justify-content: space-between;
   padding: 23px 10px;
 }
+@media screen and (min-width: 768px) {
+  .header-div {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
 
 .header-div-items {
   display: flex;
@@ -380,6 +385,12 @@ textarea {
   padding-bottom: 230px;
   padding-left: 10px;
 }
+@media screen and (min-width: 768px) {
+  .head-section h1 {
+    padding-left: 34px;
+    text-align: left;
+  }
+}
 
 .wrapper {
   margin-left: 10px;
@@ -397,6 +408,11 @@ textarea {
   letter-spacing: 0.05em;
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .container1 h2 {
+    text-align: left;
+  }
 }
 
 .container2 {
