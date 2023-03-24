@@ -353,7 +353,12 @@ a {
   display: flex;
   justify-content: flex-end;
   gap: 28px;
-  padding-right: 337px;
+  margin-right: 25%;
+}
+@media screen and (max-width: 768px) {
+  .nav_list {
+    margin-right: 15%;
+  }
 }
 
 .nav {
@@ -370,6 +375,16 @@ h1 {
   margin-top: 144px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 p {
   font-family: "Source Sans Pro";
@@ -378,6 +393,13 @@ p {
   text-align: center;
   color: #242635;
   margin-bottom: 47px;
+}
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
 }
 
 .img {

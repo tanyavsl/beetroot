@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="wrapper">
     <header>
         <nav class="nav">
             <ul class="nav_list">
@@ -32,16 +33,25 @@
         <h1>Patagonia</h1>
         <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. <br> <br> Donec viverra eleifend lacus, vitae ullamcor.</p>
         <div class="img">
-        <img class="img-elem" src="./assets/img/Bitmap.svg" alt="" srcset="./assets/img/Bitmap2.svg 768px, ./assets/img/Bitmap3.svg 320px">
-
+        
+         
         <picture>
-            <source media="(max-width: 1400px)" srcset="./assets/img/Bitmap.svg">
-            <source media="(max-width: 768px)" srcset="./assets/img/Bitmap2.svg">
-            <source media="(max-width: 320px)" srcset="./assets/img/Bitmap3.svg">
-            
-        </picture>
-    </div>
+            <source 
+              srcset="./assets/img/Bitmap3.svg"
+              media="(max-width: 320px)"
+            />
+            <source 
+              srcset="./assets/img/Bitmap2.svg"
+              media="(max-width: 768px)"
+            />
+            <img 
+              src="./assets/img/Bitmap.svg" 
+              alt="Baby Sleeping"
+            />
+          </picture>
+    
     </main>
+</div>
 </body>
 
 </html>
