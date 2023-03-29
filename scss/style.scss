@@ -2,4 +2,57 @@
 @import "./responsive";
 @import "./variables";
 @import "./mixin";
- 
+
+.heading {
+    background-image: url(/assets/images/bg-image1.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_h1 {
+        padding-top: 295px;
+        @include fontsJosefin(700, 48px, $color-white, 52px);
+    }
+
+    &_p {
+        @include fontsJosefin(400, 22px, $color-white, 28px);
+        letter-spacing: 0.31em;
+    }
+  .heading_search-form {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 211px;
+    &_input {
+        width: 647px;
+height: 60px;
+
+    }
+    input::placeholder {
+padding-left: 36px;
+@include fontsJosefin(400, 14px, $color-text-grey, 20px);
+letter-spacing: 0.2em;
+    }
+    &_button {
+        width: 139px;
+        height: 56px;
+        background: $color-accent;
+        border: none;
+        position: absolute;
+        left: 510px;
+        top: 53px;
+        
+        @include fontsAleo(400, 14px, $color-white, 20px);
+letter-spacing: 0.1em;
+    }
+    .button-search {
+        padding-right: 12px;
+    }
+}
+.heading-p-scroll {
+    @include fontsJosefin(400, 14px, $color-white, 20px);
+text-align: center;
+letter-spacing: 0.2em;
+}
+}
+.heading-svg {
+    left: calc(50% - 14px/2);
+}

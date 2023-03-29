@@ -336,3 +336,100 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
+
+.heading {
+  background-image: url(/assets/images/bg-image1.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading_h1 {
+  padding-top: 295px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #FFFFFF;
+  line-height: 52px;
+}
+.heading_p {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #FFFFFF;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+}
+.heading .heading_search-form {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 211px;
+}
+.heading .heading_search-form_input {
+  width: 647px;
+  height: 60px;
+}
+.heading .heading_search-form input::-webkit-input-placeholder {
+  padding-left: 36px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+}
+.heading .heading_search-form input::-moz-placeholder {
+  padding-left: 36px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+}
+.heading .heading_search-form input::placeholder {
+  padding-left: 36px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+}
+.heading .heading_search-form_button {
+  width: 139px;
+  height: 56px;
+  background: #5373FD;
+  border: none;
+  position: absolute;
+  left: 510px;
+  top: 53px;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+.heading .heading_search-form .button-search {
+  padding-right: 12px;
+}
+.heading .heading-p-scroll {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.heading-svg {
+  left: calc(50% - 7px);
+}
