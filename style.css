@@ -358,7 +358,7 @@ textarea {
   justify-content: space-between;
   padding: 23px 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 727px) {
   .header-div {
     padding-left: 34px;
     padding-right: 34px;
@@ -385,7 +385,7 @@ textarea {
   padding-bottom: 230px;
   padding-left: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 727px) {
   .head-section h1 {
     padding-left: 34px;
     text-align: left;
@@ -409,7 +409,7 @@ textarea {
   text-align: center;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 727px) {
   .container1 h2 {
     text-align: left;
   }
@@ -450,7 +450,7 @@ textarea {
   margin-bottom: 37px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 727px) {
   .wrapper {
     margin-left: 34px;
     margin-right: 34px;
@@ -461,6 +461,9 @@ textarea {
   }
   .container-reverse-item {
     margin-left: 20px;
+  }
+  .container-reverse-item2 {
+    margin-right: 20px;
   }
   .imgbig {
     width: 340px;
@@ -478,6 +481,11 @@ textarea {
   margin-top: 70px;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 727px) {
+  .h3-text {
+    margin-top: 0;
+  }
+}
 
 .p-text {
   font-family: "Lato";
@@ -489,12 +497,50 @@ textarea {
   margin-bottom: 30px;
 }
 
-.text-block {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 25px;
+@media screen and (min-width: 727px) {
+  .h3-p-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flexbox {
+    display: flex;
+  }
+  .flexbox-elem {
+    margin-left: 20px;
+  }
+  .flexbox-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .flexbox-elem-reverse {
+    margin-right: 20px;
+  }
+  .text-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  .textaddd {
+    margin-top: 66px;
+    margin-bottom: 46px;
+  }
+  .flexbox-row2 {
+    display: flex;
+    gap: 20px;
+  }
+  .row1 {
+    width: 50%;
+  }
+  .row2 {
+    width: 50%;
+  }
+  .imgrow {
+    width: 100%;
+  }
+  .text-p {
+    text-align: center;
+  }
 }
-
 .container-h3-min {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
@@ -565,6 +611,7 @@ textarea {
   letter-spacing: 0.05em;
   color: #565656;
   margin-bottom: 70px;
+  margin-top: 50px;
 }
 
 .footer-h1 {
@@ -628,4 +675,61 @@ footer {
   padding-right: 14px;
   padding-left: 14px;
   border: 1px solid #565656;
+}
+
+.header {
+  position: relative;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 950px) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+
+.nav {
+  display: flex;
+  padding-top: 7px;
+  margin-right: 84px;
+}
+.nav__item {
+  cursor: pointer;
+}
+.nav__item:not(:first-of-type) {
+  margin-left: 42px;
+}
+.nav__item__link {
+  color: #000000;
+  font-weight: 400;
+  font-family: "Lato";
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+}
+.nav__item:hover .nav__item__link {
+  text-decoration: underline;
+}
+@media screen and (max-width: 950px) {
+  .nav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 7px 18px -5px rgba(0, 0, 0, 0);
+    display: none;
+  }
+  .nav.is-active {
+    display: flex;
+  }
+  .nav .nav__item {
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }

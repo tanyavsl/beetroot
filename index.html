@@ -4,27 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/_hamburger.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display:wght@400;500;600&display=swap"
         rel="stylesheet">
+    
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="header-div">
         <img src="./assets/icons/Logo.svg" alt="logo">
         <div class="header-div-items">
+            <nav>
+               
+                <ul class="nav">
+                    <li class="nav__item"><a href="#" class="nav__item__link">HOME</a></li>
+                    <li class="nav__item"><a href="#" class="nav__item__link">ABOUT</a></li>
+                    <li class="nav__item"><a href="#" class="nav__item__link">WORKS</a></li>
+                    <li class="nav__item"><a href="#" class="nav__item__link">BLOG</a></li>
+                    <li class="nav__item"><a href="#" class="nav__item__link">CONTACT</a></li>
+                </ul>
+            </nav>
         <img src="./assets/icons/search.svg" alt="icons-search">
-        <button class="header-burger">
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
-        </button>
+        <div class="hamburger hamburger--collapse">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
         </div>
     </div>
     </header>
+
+    <script>
+        const hamburgerElm = document.querySelector('.hamburger');
+        const navElm = document.querySelector('.nav');
+
+        hamburgerElm.addEventListener('click', () => {
+            hamburgerElm.classList.toggle('is-active');
+            navElm.classList.toggle('is-active');
+        });
+    </script>
     <main>
         <section>
             <div class="head-section">
@@ -47,7 +69,7 @@
             </div>
             <div class="container2">
                 <div class="container-reverse1">
-                    <div class="container-reverse-item">
+                    <div class="container-reverse-item2">
                 <p class="container-p-grey">Technology, Interface Design</p>
                 <h3 class="container-h3">Using UX Design to Build a Sustainable Future</h3>
                 <p class="container-p-grey">6 May, 2020</p>
@@ -58,44 +80,61 @@
             </div>
         </section>
         <section class="wrapper">
+            <div class="h3-p-text">
             <h3 class="h3-text">Latest Post</h3>
             <p class="p-text">View All</p>
+        </div>
+        <div class="flexbox">
             <img src="./assets/icons/image3.svg" alt="">
+            <div class="flexbox-elem">
             <div class="text-block">
             <p class="container-p-grey">Interface Design</p>
             <p class="container-p-grey">8 June, 2020</p>
             </div>
             <h3 class="container-h3-min">UX traffic light colours</h3>
             <p class="container-p-min">UI has to make a huge visual difference between warning, an alert and a success.</p>
-
+        </div>
+        </div>
+        <div class="flexbox-reverse">
             <img src="./assets/icons/image4.svg" alt="">
+            <div class="flexbox-elem-reverse">
             <div class="text-block">
             <p class="container-p-grey">Interface Design</p>
-            <p class="container-p-grey">8 June, 2020</p>
+            <p class="container-p-grey">6 May, 2020</p>
         </div>
             <h3 class="container-h3-min">Using UX Design to Build a Sustainable Future</h3>
             <p class="container-p-min">UI has to make a huge visual difference between warning, an alert and a success.</p>
-            
+        </div>
+        </div>  
+            <div class="flexbox">
             <img src="./assets/icons/image5.svg" alt="">
+            <div class="flexbox-elem">
             <div class="text-block">
             <p class="container-p-grey">Interface Design</p>
             <p class="container-p-grey">8 June, 2020</p>
         </div>
             <h3 class="container-h3-min">Creativity vs. UX</h3>
             <p class="container-p-min">Is it possible to create a delightful user experience without following best UX practices?</p>
+            </div>
+            </div>
         </section>
         <section class="wrapper">
-            <h3 class="h3-text">The Most Popular</h3>
-            <p class="p-text">View All</p>
-            <img src="./assets/icons/image6.svg" alt="">
+            <div class="h3-p-text">
+            <h3 class="h3-text textaddd">The Most Popular</h3>
+            <p class="p-text textaddd">View All</p>
+        </div>
+        <div class="flexbox-row2">
+            <div class="row1">
+            <img class="imgrow" src="./assets/icons/image6.svg" alt="">
             <div class="text-block">
             <p class="container-p-grey">Interface Design</p>
             <p class="container-p-grey">8 June, 2020</p>
         </div>
             <h3 class="h3-text-title">Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
             <p class="container-p-min">LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand</p>
-
-            <img src="./assets/icons/image7.svg" alt="">
+        </div>
+        <div class="row2">
+            <img class="imgrow" src="./assets/icons/image7.svg" alt="">
             <div class="text-block">
             <p class="container-p-grey">Visual Design</p>
             <p class="container-p-grey">8 June, 2020</p>
@@ -103,15 +142,20 @@
             <h3 class="h3-text-title">Creativity vs. UX</h3>
             <p class="container-p-min">Is it possible to create a delightful user experience without following best UX practices?
               <br><br> UI has to make a huge visual difference between warning, an alert and a success.</p>
+            </div>
+            </div>
         </section>
         <div class="button-div">
             <button type="button" class="button">Load More</button>
         </div>
+        <div class="wrapper">
         <h2 class="text-h2">Full-time UI/UX designer <br>
             Head of Design at VeronaLabs.com</h2>
+        
             <p class="text-p">We work with clients around the world from our headquarters in Charleston, South Carolina.
                <br> <br> We focus on naming, branding, brand narratives, website design and development, and brand experiences.</p>
-    </main>
+            </div>
+            </main>
     <footer>
         <h1 class="footer-h1">Need a project?</h1>
         <p class="footer-p">(239) 555-0108</p>
