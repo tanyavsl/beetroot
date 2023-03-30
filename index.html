@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/_hamburger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo&display=swap" rel="stylesheet">
@@ -30,7 +31,67 @@
             <img class="heading-svg" src="./assets/icons/scroll-down.svg">
 
         </div>
+        <div class="header">
+            <div class="header__logo">BHROMAON</div>
+            <nav>
+                <div class="hamburger hamburger--collapse">
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner"></div>
+                    </div>
+                  </div>
+               <ul class="nav">
+                <li class="nav__item"><a href="#" class="nav__item__link">WHO WE ARE</a></li>
+                <li class="nav__item"><a href="#" class="nav__item__link">WHAT WE DO</a></li>
+                <li class="nav__item"><a href="#" class="nav__item__link">TRAVEL WITH US</a></li>
+                <li class="nav__item"><a href="#" class="nav__item__link">CONTACT US</a></li>
+               </ul>
+            </nav>
+
+        </div>
     </header>
+    <section class="section">
+        <div class="section_item">
+            <h2 class="section_item-h2">Why Choose Us</h2>
+            <p class="section_item-p">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+                 <br><br>
+                Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
+                <button class="section_item-button">Explore Places </button>
+        </div>
+        <div class="section_item2">
+            <img class="section_item2-images" src="./assets/images/image 1.svg" alt="">
+            <img class="section_item2-img" src="./assets/images/image 2.svg" alt="">
+        
+        </div>
+    </section>
+    <section class="container">
+        <div class="container_item1">
+      <img src="./assets/icons/Line.svg" alt="">
+    </div>
+    <div class="container_item2"> 
+        <div class="container_item2-img">
+      <img src="./assets/icons/search blu.svg" alt="">
+      <p>Search Places</p>
+    </div>
+    <div class="container_item2-img">
+      <img  src="./assets/icons/check-circle.svg" alt="">
+      <p>Select Places</p>
+      </div>
+      <div class="container_item2-img">
+      <img  src="./assets/icons/thumbs-up.svg" alt="">
+      <p>Book & Enjoy</p>
+      </div>
+    </div>
+    </section>
+
+    <script>
+        const hamburgerElm = document.querySelector('.hamburger');
+        const navElm = document.querySelector('.nav');
+
+        hamburgerElm.addEventListener('click', () => {
+        hamburgerElm.classList.toggle('is-active');
+        navElm.classList.toggle('is-active');
+        });
+    </script>
 </body>
 
 </html>
