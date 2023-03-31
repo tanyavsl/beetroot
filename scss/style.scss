@@ -3,8 +3,13 @@
 @import "./variables";
 @import "./mixin";
 
-/* Header */
+
+html {
+    scroll-behavior: smooth;
+}
+/* Header   Header   Header   Header   Header   Header   Header */
 .heading {
+    width: 100%;
     background-image: url(/assets/images/bg-image1.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -50,20 +55,52 @@
             position: absolute;
             right: 5px;
             top: 53px;
-
+            display: flex;
+            align-items: center;
+            padding-left: 24px;
             @include fontsAleo(400, 14px, $color-white, 20px);
             letter-spacing: 0.1em;
         }
+        
 
         .button-search {
             padding-right: 12px;
+            
+            
         }
+        
     }
 
     .heading-p-scroll {
         @include fontsJosefin(400, 14px, $color-white, 20px);
         text-align: center;
         letter-spacing: 0.2em;
+
+        a {
+            text-decoration: none;
+            color: $color-white;
+        }
+        a:hover {
+            cursor: pointer;
+            color: $color-accent;
+        }
+         a:hover .scroll:hover {
+            path {
+                fill: #5373FD;
+            }
+            
+        }
+    }
+
+     button:hover {
+        background-color: $color-white;
+        color: $color-accent;
+        border: 2px solid $color-accent;
+    } 
+    button:hover .button-search {
+        path {
+            fill:#5373FD;
+        }
     }
 }
 
@@ -71,7 +108,10 @@
     margin-bottom: 120px;
 }
 
-/*Header navigation*/
+
+
+
+/*Header navigation   Header navigation   Header navigation*/
 .header {
     height: 84px;
     background: $color-accent;
@@ -122,7 +162,6 @@
 .nav {
     display: flex;
 
-
     &__item {
         cursor: pointer;
 
@@ -134,7 +173,6 @@
             @include fontsAleo(400, 14px, $color-white, 20px);
             letter-spacing: 0.1em;
             text-decoration: none;
-
         }
 
         &:hover {
@@ -167,7 +205,7 @@
 }
 
 
-/*section1*/
+/*section1   section1   section1   section1  section1*/
 
 .section {
     display: flex;
@@ -176,7 +214,6 @@
     background-position: left;
     background-position: center;
     background-repeat: no-repeat;
-
 
     @include cwd(1160px) {
         padding: 0 32px;
@@ -221,11 +258,14 @@
             text-transform: uppercase;
             border: none;
         }
+        &-button:hover {
+            background-color: $color-white;
+            color: $color-accent;
+            border: 2px solid $color-accent;
+        }
     }
 
     &_item2 {
-
-
         margin-left: 121px;
         margin-top: 124px;
 
@@ -239,7 +279,6 @@
             margin-left: 24px;
             margin-right: 24px;
             flex-direction: row;
-
         }
 
         &-img {
@@ -253,10 +292,6 @@
             @include cwd(768px) {
                 margin-top: 0;
                 margin-left: 24px;
-
-
-
-
             }
         }
 
@@ -268,7 +303,7 @@
 }
 
 
-/*container*/
+/*container   container   container   container   container   container*/
 .container {
     display: flex;
     flex-direction: column;
@@ -276,20 +311,29 @@
     height: 306px;
     background-color: $color-dark-grey;
 
+    @include cwd(768px) {
+        height: 658px;
+    }
+
     &_item1 {
         margin-top: 81px;
+
+        @include cwd(768px) {
+            display: none;
+        }
     }
 
     .container_item2 {
         display: flex;
 
+        @include cwd(768px) {
+            flex-direction: column
+        }
+
         &-img {
             p {
                 @include fontsAleo(400, 36px, $color-white, 40px);
-
                 text-align: center;
-
-
             }
         }
     }
@@ -299,6 +343,10 @@
         flex-direction: column;
         align-items: center;
 
+        @include cwd(768px) {
+            margin-top: 70px;
+        }
+
         p {
             margin-top: 20px;
         }
@@ -306,5 +354,242 @@
 
     .container_item2-img:not(:first-of-type) {
         margin-left: 204px;
+
+        @include cwd(768px) {
+            margin-left: 0px;
+        }
     }
 }
+
+
+/* SECTION 2   SECTION 2   SECTION 2   SECTION 2  SECTION 2 */
+
+.section2 {
+    height: 712px;
+    background-image: url(/assets/images/bg-image2.svg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    @include cwd(768px) {
+        height: 588px;
+    }
+
+    &_bg {
+        width: 494px;
+        height: 372px;
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 110px;
+        padding: 0 32px;
+        background: rgba(35, 35, 35, 0.9);
+
+        @include cwd(1024px) {
+            margin-left: 32px;
+        }
+
+        @include cwd(768px) {
+            margin-left: 24px;
+
+            margin-top: 120px;
+            width: 656px;
+        }
+
+        &-elem {
+            @include fontsJosefin(300, 20px, $color-white, 28px);
+            letter-spacing: 0.1em;
+            margin-top: 44px;
+        }
+
+        &-elemh {
+            margin: 16px 0;
+            @include fontsJosefin(400, 20px, $color-white, 28px);
+            text-transform: uppercase;
+        }
+
+        &-elemp {
+            @include fontsJosefin(300, 16px, $color-white, 28px);
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        &-button {
+            width: 213px;
+            height: 60px;
+            background-color: $color-accent;
+            border: none;
+            @include fontsAleo(400, 16px, $color-white, 20px);
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+        &-button:hover {
+            background-color: $color-white;
+            color: $color-accent;
+            border: 2px solid $color-accent;
+        }
+    }
+}
+
+
+
+
+/* SECTION 3   SECTION 3   SECTION 3   SECTION 3  SECTION 3 */
+
+.section3 {
+    height: 712px;
+    background-image: url(/assets/images/bg-image4.svg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+
+    @include cwd(768px) {
+        height: 588px;
+    }
+
+    &_bg {
+        width: 494px;
+        height: 372px;
+        position: absolute;
+        margin-top: 220px;
+        margin-right: 110px;
+        padding: 0 32px;
+        background: rgba(35, 35, 35, 0.9);
+
+        @include cwd(1024px) {
+            margin-right: 32px;
+        }
+
+        @include cwd(768px) {
+            margin-right: 24px;
+            margin-top: 120px;
+            width: 656px;
+        }
+
+        &-elem {
+            @include fontsJosefin(300, 20px, $color-white, 28px);
+            letter-spacing: 0.1em;
+            margin-top: 44px;
+        }
+
+        &-elemh {
+            margin: 16px 0;
+            @include fontsJosefin(400, 20px, $color-white, 28px);
+            text-transform: uppercase;
+        }
+
+        &-elemp {
+            @include fontsJosefin(300, 16px, $color-white, 28px);
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        &-button {
+            width: 213px;
+            height: 60px;
+            background-color: $color-accent;
+            border: none;
+            @include fontsAleo(400, 16px, $color-white, 20px);
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+        &-button:hover {
+            background-color: $color-white;
+            color: $color-accent;
+            border: 2px solid $color-accent;
+        }
+    }
+}
+
+
+/* SECTION 4   SECTION 4   SECTION 4   SECTION 4   SECTION 4 */
+
+.section4 {
+    background-image: url(/assets/images/bg-image5.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 708px;
+
+    &_object1 {
+        @include fontsAleo(400, 36px, $color-white, 40px);
+        text-align: center;
+        text-transform: capitalize;
+        padding-top: 120px;
+    }
+
+    &_object2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #333333;
+        margin: 0 110px;
+        margin-top: 60px;
+
+        @include cwd(1256px) {
+            margin: 0 32px;
+            margin-top: 60px;
+        }
+
+        &_img {
+            @include cwd(1024px) {}
+        }
+
+        &_items {
+            padding: 0 60px;
+            @include cwd(1024px) {}
+
+            &-h4 {
+                @include fontsJosefin(400, 20px, $color-white, 28px);
+                text-transform: uppercase;
+            }
+
+            &-div {
+                @include fontsJosefin(300, 16px, $color-white, 28px);
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}
+
+
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+ .footer {
+    background-color: $color-black;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 268px;
+    &-caption {
+        @include fontsJosefin(700, 24px, $color-white, 28px);
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+    }
+    &-subtitle {
+        @include fontsJosefin(400, 14px, $color-white, 20px);
+letter-spacing: 0.2em;
+margin-top: 8px;
+margin-bottom: 20px;
+    }
+
+    &_socmedia {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        align-items: center;
+    }
+ }
+
+
+ .footer_socmedia-icon:hover {
+    cursor: pointer;
+    path {
+    fill:#5373FD;
+    }
+ }
+
+ 
