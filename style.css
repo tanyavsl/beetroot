@@ -925,8 +925,7 @@ html {
 .section4_object2 {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  background: #333333;
+  /* align-items: center; */
   margin: 0 110px;
   margin-top: 60px;
 }
@@ -936,8 +935,13 @@ html {
     margin-top: 60px;
   }
 }
+.section4_object2_img {
+  height: 308px;
+  width: 380px;
+}
 .section4_object2_items {
-  padding: 0 60px;
+  padding: 48px 60px;
+  background: #333333;
 }
 .section4_object2_items-h4 {
   font-family: "Josefin Sans", sans-serif;
@@ -957,7 +961,6 @@ html {
   line-height: 28px;
   letter-spacing: 0.1em;
 }
-
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 .footer {
   background-color: #000000;
