@@ -102,8 +102,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/style.css",
-      "oF" : 2,
+      "oAP" : "\/scss\/index.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -133,7 +133,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-unblue",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 701347180.05955601
+    "lastBuiltDate" : 701769967.67234898
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1400,7 +1400,7 @@
     "esLintSourceType" : 0,
     "externalServerAddress" : "http:\/\/localhost:8888",
     "gitIgnoreBuildFolder" : 1,
-    "hideConfigFile" : 0,
+    "hideConfigFile" : 1,
     "jsCheckerReservedNamesString" : "",
     "languageDefaultsCOFFEE" : {
       "autoOutputAction" : 0,
