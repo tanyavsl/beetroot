@@ -40,12 +40,25 @@ html {
             @include cwd(694px) {
                 width: 540px;
             }
+
+            @include cwd(562px) {
+                width: 355px;
+            }
+
+            @include cwd(372px) {
+                width: 345px;
+            }
+
         }
 
         input::placeholder {
             padding-left: 36px;
             @include fontsJosefin(400, 14px, $color-text-grey, 20px);
             letter-spacing: 0.2em;
+
+            @include cwd(562px) {
+                padding-left: 6px;
+            }
         }
 
         &_button {
@@ -61,13 +74,35 @@ html {
             padding-left: 24px;
             @include fontsAleo(400, 14px, $color-white, 20px);
             letter-spacing: 0.1em;
+
+            @include cwd(562px) {
+                display: none;
+            }
+
         }
 
+        &_button2 {
+            display: none;
+            width: 55px;
+            height: 56px;
+            background: $color-accent;
+            border: none;
+            position: absolute;
+            right: 5px;
+            top: 53px;
+            align-items: center;
+            justify-content: center;
+            padding-left: 15px;
+
+            @include cwd(562px) {
+                display: flex;
+            }
+
+        }
 
         .button-search {
             padding-right: 12px;
         }
-
     }
 
     .heading-p-scroll {
@@ -143,7 +178,6 @@ html {
         @include cwd(642px) {
             margin-top: 34px;
         }
-
     }
 }
 
@@ -238,6 +272,10 @@ html {
             /* width: 100%;  */
         }
 
+        @include cwd(742px) {
+            margin: 0 24px;
+        }
+
         &-h2 {
             @include fontsAleo(400, 36px, $color-white, 40px);
             margin-bottom: 24px;
@@ -267,6 +305,8 @@ html {
     }
 
     &_item2 {
+        display: flex;
+        flex-direction: column;
         margin-left: 121px;
         margin-top: 124px;
 
@@ -280,9 +320,17 @@ html {
             margin-left: 24px;
             margin-right: 24px;
             flex-direction: row;
+
+        }
+
+        @include cwd(762px) {
+            flex-direction: column;
+            align-items: center;
         }
 
         &-img {
+            max-height: 220px;
+            max-width: 350px;
             margin-top: 16px;
             margin-left: 111px;
 
@@ -293,10 +341,18 @@ html {
             @include cwd(768px) {
                 margin-top: 0;
                 margin-left: 24px;
+
+            }
+
+            @include cwd(762px) {
+                margin-top: 10px;
+                margin-left: 0;
             }
         }
 
         .section_item2-images {
+            max-height: 220px;
+            max-width: 350px;
 
             @include cwd(768px) {}
         }
@@ -312,14 +368,27 @@ html {
     height: 306px;
     background-color: $color-dark-grey;
 
-    @include cwd(768px) {
+    @include cwd(839px) {
         height: 658px;
     }
 
     &_item1 {
         margin-top: 81px;
 
-        @include cwd(768px) {
+        @include cwd(1103px) {
+            svg {
+                width: 632px;
+                height: 57px;
+            }
+        }
+
+        @include cwd(930px) {
+            svg {
+                width: 550px;
+            }
+        }
+
+        @include cwd(839px) {
             display: none;
         }
     }
@@ -327,7 +396,7 @@ html {
     .container_item2 {
         display: flex;
 
-        @include cwd(768px) {
+        @include cwd(839px) {
             flex-direction: column
         }
 
@@ -344,7 +413,7 @@ html {
         flex-direction: column;
         align-items: center;
 
-        @include cwd(768px) {
+        @include cwd(839px) {
             margin-top: 70px;
         }
 
@@ -356,7 +425,15 @@ html {
     .container_item2-img:not(:first-of-type) {
         margin-left: 204px;
 
-        @include cwd(768px) {
+        @include cwd(1103px) {
+            margin-left: 120px;
+        }
+
+        @include cwd(930px) {
+            margin-left: 100px;
+        }
+
+        @include cwd(839px) {
             margin-left: 0px;
         }
     }
@@ -378,12 +455,12 @@ html {
     }
 
     &_bg {
-        width: 494px;
-        height: 372px;
+        max-width: 558px;
+        max-height: 372px;
         position: absolute;
         margin-top: 220px;
         margin-left: 110px;
-        padding: 0 32px;
+        padding: 44px 32px;
         background: rgba(35, 35, 35, 0.9);
 
         @include cwd(1024px) {
@@ -392,14 +469,20 @@ html {
 
         @include cwd(768px) {
             margin-left: 24px;
+            margin-right: 24px;
             margin-top: 120px;
-            width: 656px;
+            max-width: 656px;
+            max-height: 450px;
+        }
+
+        @include cwd(447px) {
+            margin-top: 60px;
         }
 
         &-elem {
             @include fontsJosefin(300, 20px, $color-white, 28px);
             letter-spacing: 0.1em;
-            margin-top: 44px;
+            /*  margin-top: 44px; */
         }
 
         &-elemh {
@@ -451,12 +534,12 @@ html {
     }
 
     &_bg {
-        width: 494px;
-        height: 372px;
+        max-width: 558px;
+        max-height: 372px;
         position: absolute;
         margin-top: 220px;
         margin-right: 110px;
-        padding: 0 32px;
+        padding: 44px 32px;
         background: rgba(35, 35, 35, 0.9);
 
         @include cwd(1024px) {
@@ -465,14 +548,20 @@ html {
 
         @include cwd(768px) {
             margin-right: 24px;
+            margin-left: 24px;
             margin-top: 120px;
-            width: 656px;
+            max-width: 656px;
+            max-height: 450px;
+        }
+
+        @include cwd(447px) {
+            margin-top: 60px;
         }
 
         &-elem {
             @include fontsJosefin(300, 20px, $color-white, 28px);
             letter-spacing: 0.1em;
-            margin-top: 44px;
+            /* margin-top: 44px; */
         }
 
         &-elemh {
@@ -514,18 +603,34 @@ html {
     background-repeat: no-repeat;
     height: 708px;
 
+    @include cwd(914px) {
+        height: 924px;
+    }
+
+    @include cwd(768px) {
+        height: 924px;
+    }
+
+    @include cwd(435px) {
+        height: 954px;
+    }
+
     &_object1 {
         @include fontsAleo(400, 36px, $color-white, 40px);
         text-align: center;
         text-transform: capitalize;
         padding-top: 120px;
+
+        @include cwd(435px) {
+            padding-top: 60px;
+        }
     }
 
     &_object2 {
         display: flex;
         flex-direction: row;
         /* align-items: center; */
-        
+
         margin: 0 110px;
         margin-top: 60px;
 
@@ -534,17 +639,53 @@ html {
             margin-top: 60px;
         }
 
+        @include cwd(914px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include cwd(768px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include cwd(435px) {
+            margin-top: 30px;
+        }
+
         &_img {
             height: 308px;
             width: 380px;
+
             @include cwd(1024px) {}
+
+            @include cwd(914px) {
+                width: 100%;
+            }
+
+            @include cwd(768px) {
+                width: 100%;
+            }
+
+            @include cwd(435px) {
+                height: 240px;
+                width: 100%;
+            }
+
         }
 
         &_items {
             padding: 48px 60px;
             background: #333333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-            @include cwd(1024px) {}
+            @include cwd(1105px) {
+                padding: 24px 30px;
+            }
+
+            @include cwd(360px) {}
 
             &-h4 {
                 @include fontsJosefin(400, 20px, $color-white, 28px);
@@ -552,13 +693,11 @@ html {
             }
 
             &-div {
-               
+
                 @include fontsJosefin(300, 16px, $color-white, 28px);
                 letter-spacing: 0.1em;
 
-                img {
-                    
-                }
+                img {}
             }
         }
     }
