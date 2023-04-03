@@ -14,6 +14,7 @@ html {
     background-image: url(/assets/images/bg-image1.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,7 +137,7 @@ html {
 
     button:hover .button-search {
         path {
-            fill: #5373FD;
+            fill: $color-accent;
         }
     }
 }
@@ -248,6 +249,7 @@ html {
     background-position: left;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 
     @include cwd(1160px) {
         padding: 0 32px;
@@ -448,6 +450,7 @@ html {
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 
 
     @include cwd(768px) {
@@ -526,6 +529,7 @@ html {
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: flex-end;
 
@@ -601,6 +605,7 @@ html {
     background-image: url(/assets/images/bg-image5.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 708px;
 
     @include cwd(914px) {
@@ -741,6 +746,6 @@ html {
     cursor: pointer;
 
     path {
-        fill: #5373FD;
+        fill: $color-accent;
     }
 }
