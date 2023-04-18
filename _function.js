@@ -108,3 +108,88 @@
 //     return Math.floor(Math.random() * (max-min+1) + min);
 // }
 // console.log(randomNumber(10, 50));
+
+
+
+//ДОМАШКА ПО ФУНКЦІЯМ
+//МІНІМУМ МІНІМУМ МІНІМУМ МІНІМУМ  МІНІМУМ МІНІМУМ  МІНІМУМ МІНІМУМ 
+
+//2 Створи функцію, яка буде виводити кількість переданих їй аргументів.
+// function age(a, b, c, d) {
+// }
+// console.log(age.length);
+
+
+
+//4 Напиши функцію, яка обчислює факторіал переданого їй числа.
+// let fact = Number(prompt('Введіть число'));
+
+// function factorial(n) {
+//     return (n != 1) ? n * factorial(n - 1) : 1;
+//   }
+  
+//   alert( factorial(fact) ); // 120
+
+
+
+//6 Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. 
+//Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
+
+// function figure(length, width) {
+//     let rectangle = length * width;
+//     if(length && width) {
+//         return rectangle; 
+//     }  else if (length) {
+//         return length * length;
+//     }
+//    width = typeof width !== "undefined" ? width : length;
+// }
+
+// console.log(figure(3, 2));
+
+
+//НОРМА НОРМА НОРМА НОРМА НОРМА НОРМА  НОРМА НОРМА НОРМА  НОРМА НОРМА НОРМА 
+//1 Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. 
+//Досконале число - це число, яке дорівнює сумі всіх своїх дільників.
+
+// function perfectNumber
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Задачка 1 задачка 1 задачка1
+// const punch = (strange) => {
+//     return(point) => strange ** point;
+// }
+// console.log(punch(4)(2));
+
+
+
+//Задачка 2 задачка 2 задачка 2
+// function number(...array) {
+//     let sum = 0;
+//     for (let index = 0; index < array.length && index < 5; index++) {
+//         const element = array[index];
+//         sum += element;
+//      }
+//      return sum;
+//  }
+//  console.log(number(1,2,3,4,5));
+ 
