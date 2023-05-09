@@ -1,0 +1,1 @@
+$(document).ready((function(){$(".slides").slick({infinite:!0,slidesToShow:1,dots:!0,speed:300})}));

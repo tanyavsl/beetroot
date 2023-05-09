@@ -1,0 +1,93 @@
+@import "./scss/reset";
+@import "./scss/responsive";
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+.heading {
+    display:flex;
+    justify-content: space-between;
+    margin: 23px 100px;
+
+    &_nav {
+     display: flex;
+     flex-direction: row;
+     gap: 30px;
+     font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+margin:5px 0px;
+    }
+
+    &_icons{
+        display: flex;
+        gap: 30px;
+    }
+}
+.slides {
+   
+     width: 100%;
+}
+.slides-img1 {
+   height: 700px;
+   background-image: url(./assets/images/image1.svg);
+   background-size: cover;
+   background-position: center;
+}
+.slides-img2 {
+    height: 700px;
+    background-image: url(./assets/images/image2.svg);
+    background-size: cover;
+    background-position: center;
+ }
+ .slides-img3 {
+    height: 700px;
+    background-image: url(./assets/images/image3.svg);
+    background-size: cover;
+    background-position: center center;
+ }
+ .slid-h1 {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+text-align: center;
+margin: 120px 100px 50px;
+ }
+
+ .slid-button {
+    width: 227px;
+height: 52px;
+border: 2px solid #F8F1EA;
+margin-right: 156px;
+
+ }
+ .divchik {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+ }
+
+ .section-two {
+    &_text {
+        font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+text-align: center;
+    }
+    &_btn {
+        width: 227px;
+height: 50px;
+background-color: white;
+border: 2px solid #000000;
+    }
+    &_slider{
+        &-giter1{
+            
+        }
+    }
+ }
+
