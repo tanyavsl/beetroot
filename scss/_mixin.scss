@@ -1,0 +1,28 @@
+@use "./variables";
+
+@mixin fontsMontserrat($weight, $size, $color, $height) {
+    font-family: $font-Monst;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+    line-height: $height;
+}
+
+@mixin fontsOpenSans($weight, $size, $color, $height) {
+    font-family: $font-OpenSans;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+    line-height: $height;
+}
+
+@mixin fontsSourSansPro($weight, $size, $color, $height) {
+    font-family: $font-SourSansPro;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+    line-height: $height;
+}
